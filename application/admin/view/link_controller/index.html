@@ -1,0 +1,63 @@
+﻿<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 链接管理 <span class="c-gray en">&gt;</span> 友情链接列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a class="btn btn-primary radius"  href="{{:url('/admin/link/create')}}"><i class="Hui-iconfont">&#xe600;</i> 添加链接</a></span></div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+				<tr class="text-c">
+					<th width="40"><input name="" type="checkbox" value=""></th>
+					<th width="80">ID</th>
+					<th width="100">网站的名称</th>
+					<th width="300">网站地址</th>
+					<th width="100">排序</th>
+					<th width="100">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				{volist name="links" id="vo"}
+				<tr class="text-c">
+					<td><input name="" type="checkbox" value=""></td>
+					<td>{{$i}}</td>
+					<td class="text-l">{{$vo.site_name}}</td>
+					<td class="text-c">{{$vo.site_url}}</td>
+					<td class="text-c">{{$vo.order_by}}</td>
+					<td class="td-manage">
+ <a style="text-decoration:none" class="ml-5"  href="{{:url('/admin/link/'.$vo.id.'/edit')}}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> 
+
+<a style="text-decoration:none" class="ml-5" onClick="delLink({{$vo.id}})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				</tr>
+			{/volist}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script>
+	function delLink(id){
+		layer.confirm('确定要删除啊??',function(){
+			$.ajax({
+				type:"DELETE",
+				dataType:'json',
+				url:'/admin/link/'+id,
+				success:function(data){
+					if(data.status=='success'){
+						layer.msg(data.info,{icon:1},function(){
+							location.href='/admin/link';
+						});
+					}else{
+						layer.msg(data.info,{icon:2},function(){ 
+       							 location.href='/admin/link';        
+						});                                        								
+					}
+				}
+			});
+			
+		});
+
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+     <!-- 友情链接 --> 
+  <div id="links"> 
+    <ul> 
+     <li id="linkcat-25" class="linkcat"><h2>博友</h2> 
+      <ul class="xoxo blogroll"> 
+   {volist name="links" id="vo"}
+       <span class="lx7"><span class="link-f"><a href="{{$vo.site_url}}" target="_blank">{{$vo.site_name}}</a></span></span> 
+   {/volist}
+      </ul> </li> 
+    </ul> 
+    <div class="clear"></div> 
+   </div> 
+   <!-- 版权说明 --> 
+   
+   <footer id="footer"> 
+    <div class="bottom-nav"> 
+     <div class="menu-container">
+      <ul id="menu" class="bottom-menu">
+       <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="www.lampol-blog.com/archives">文章归档</a></li> 
+       <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="www.lampol-blog.com/sitemap">站点地图</a></li> 
+       <li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="www.lampol-blog.com/message">给我留言</a></li> 
+       <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="www.lampol-blog.com/links">友情链接</a></li> 
+      </ul>
+     </div> 
+    </div> 
+    <div id="contentinfo">
+      Copyright &copy; {{$sys.site_right}} All rights reserved. | {{$sys.site_no}}
+    </div> 
+   </footer> 
+   <!-- 返回顶部 --> 
+   <ul id="scroll"> 
+    <li><a class="hidden-widget" href="javascript:hiddenwidget()" title="隐藏侧边栏"><i class="iconfont icon-windowclose"></i></a></li> 
+    <li><a class="scroll-top" title="返回顶部"><i class="iconfont icon-chevronup"></i></a></li> 
+    <li><a class="scroll-bottom" title="转到底部"><i class="iconfont icon-chevrondown"></i></a></li> 
+   </ul>   
+  </header>
+ </body>
+</html>

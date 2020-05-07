@@ -1,0 +1,47 @@
+﻿<body>
+	<div class="page-container">
+		<p class="f-20 text-success">欢迎使用lampol </p>
+		<table class="table table-border table-bordered table-bg mt-20">
+			<thead>
+				<tr>
+					<th colspan="2" scope="col">服务器信息</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>服务器IP地址</td>
+					<td>{{$Think.server.SERVER_ADDR}}</td>
+				</tr>
+				<tr>
+					<td>服务器域名</td>
+					<td>{{$Think.server.SERVER_NAME}}</td>
+				</tr>
+				<tr>
+					<td>服务器端口 </td>
+					<td>{{$Think.server.SERVER_PORT}}</td>
+				</tr>
+				<tr>
+					<td>web服务器 </td>
+					<td>{{$Think.server.SERVER_SOFTWARE}}</td>
+				</tr>
+				<tr>
+					<td>根目录 </td>
+					<td>{{$Think.server.DOCUMENT_ROOT}}</td>
+				</tr>
+				<tr>
+					<td>服务器操作系统 </td>
+					<td>{{$Think.const.PHP_OS}}</td>
+				</tr>
+				<tr>
+					<td>PHP版本 </td>
+					<td>{{$Think.const.PHP_VERSION}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer class="footer mt-20">
+	</footer>
+	<!--/此乃百度统计代码，请自行删除-->
+	</body>
+	</html>
+	

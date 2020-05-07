@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="__ADMIN__/lib/validform/css/css.css">
+<script type="text/javascript" src="__ADMIN__/lib/validform/js/Validform_min.js"></script> 
+<!-- 右侧开始--> 
+<div id="sidebar" class="widget-area"> 
+    <!-- 右侧搜索框开始--> 
+        <aside id="search-2" class="widget widget_search"> 
+         <div id="searchbar"> 
+            <form method="post" id="searchform" action="{{:url('/search')}}"> 
+                <input type="text" datatype="hzzm" errormsg="请输入2-10位的汉字或者字母"  name="words" id="s" placeholder="输入2-10汉字或者字母搜索内容"  /> 
+                <button type="submit" id="searchsubmit">搜索</button> 
+                <span class="Validform_checktip"> </span>
+            </form> 
+         </div> 
+         <div class="clear"></div> 
+        </aside> 
+    <!-- 右侧搜索框结束--> 
+    <!-- 右侧分类开始--> 
+        <aside id="categories-2" class="widget widget_categories"> 
+         <h3 class="widget-title"><i class="iconfont icon-viewgrid"></i>分类目录</h3> 
+         <ul> 
+            {volist name="cats" id="vo"}
+                <li class="cat-item cat-item-47"><a href="{{:url('/home/list',['cat_id'=>encrypt($vo.id)])}}">{{$vo.cat_name}}</a> </li> 
+            {/volist}
+         </ul> 
+         <div class="clear"></div> 
+        </aside> 
+        <!-- 右侧分类结束--> 
+    
+        <!-- 近期文章开始--> 
+        <aside id="recent-posts-2" class="widget widget_recent_entries"> 
+         <h3 class="widget-title"><i class="iconfont icon-viewgrid"></i>近期文章</h3> 
+         <ul> 
+            {volist name="last" id="vo"}
+                <li> <a href="{{:url('/home/detail',['aid' => encrypt($vo.id)])}}">{{$vo.created_at|date='Y-m-d H:m:s',###}}发表{{$vo.title}}</a> </li>  
+            {/volist}
+         </ul> 
+         <div class="clear"></div> 
+        </aside> 
+    <!-- 近期文章结束--> 
+        <!-- 最热文章开始--> 
+        <aside id="recent-posts-2" class="widget widget_recent_entries"> 
+         <h3 class="widget-title"><i class="iconfont icon-viewgrid"></i>最热文章</h3> 
+         <ul> 
+            {volist name="hotArts" id="vo"}
+                <li> <a href="{{:url('/home/detail',['aid' => encrypt($vo.id)])}}">{{$i}}.{{$vo.title}} 浏览量:{{$vo.num}}</a> </li>  
+            {/volist}
+         </ul> 
+         <div class="clear"></div> 
+        </aside> 
+    <!-- 最热文章结束--> 
+        <aside id="img_cat-2" class="widget img_cat"> 
+         <h3 class="widget-title"><i class="iconfont icon-viewgrid"></i>最多评论</h3> 
+         <div class="img_cat"> 
+          <ul> 
+           {volist name="mostComments" id="vo"}
+           <div class="img-box"> 
+            <div class="img-x2"> 
+             <figure class="insets"> 
+              <a href="{{:url('/home/detail',['aid' => encrypt($vo.id)])}}"><img src="/{{$vo.img_url}}" alt="{{$vo.title}}" /></a> 
+              <div class="img-title"> 
+               <a href="{{:url('/home/detail',['aid' => encrypt($vo.id)])}}" rel="bookmark">{{$vo.title}}</a> 
+              </div> 
+             </figure> 
+            </div> 
+           </div> 
+           {/volist}
+           <div class="clear"></div> 
+          </ul> 
+         </div> 
+         <div class="clear"></div> 
+        </aside> 
+    
+        <!-- 人们标签开始--> 
+        <div class="sidebar-roll"> 
+         <aside id="tag_cloud-2" class="widget tag_cloud"> 
+          <h3 class="widget-title"><i class="iconfont icon-viewgrid"></i>热门标签</h3> 
+          <div class="tagcloud"> 
+            {volist name="hots" id="vo"}
+            <a href="#" class="tag-cloud-link tag-link-3 tag-link-position-1" style="color:#70807a;font-size: 15px;;">{{$vo.tag}}({{$vo.num}})</a> 
+            {/volist}
+           <div class="clear"></div> 
+          </div> 
+          <div class="clear"></div> 
+         </aside> 
+        </div> 
+        <!-- 热门标签结束--> 
+</div> 
+
+</div>
+<div class="clear"></div>
+
+<script>
+    $("#searchform").Validform({
+        datatype:{
+            "hzzm":/^[\u4e00-\u9fa5a-zA-Z]{2,10}$/,
+            "hz":/^[\u4e00-\u9fa5]{2,10}$/,
+            "zm":/^[a-zA-Z]{2,10}$/	
+            },
+        tiptype:1
+    
+    }); 
+    
+    </script>

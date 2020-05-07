@@ -1,0 +1,86 @@
+﻿  
+﻿<body>
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+		<span class="c-gray en">&gt;</span>
+		系统管理
+		<span class="c-gray en">&gt;</span>
+		基本设置
+		<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+	</nav>
+	<div class="page-container">
+		<form class="form form-horizontal" id="form-article-add" method="post" action="{{:url('/admin/system/'.$sys.id)}}">
+			<input type="hidden" name="_method" value="put">
+			<div id="tab-system" class="HuiTab">
+				<div class="tabCon">
+					<div class="row cl">
+						<label class="form-label col-xs-4 col-sm-2">
+							<span class="c-red">*</span>
+							网站名称：</label>
+						<div class="formControls col-xs-8 col-sm-9">
+							<input type="text" name="site_title" id="website-title" placeholder="控制在25个字、50个字节以内" value="{{$sys.site_title}}" class="input-text">
+						</div>
+					</div>
+					<div class="row cl">
+						<label class="form-label col-xs-4 col-sm-2">
+							<span class="c-red">*</span>
+							关键词：</label>
+						<div class="formControls col-xs-8 col-sm-9">
+							<input type="text" name="site_keywords" id="website-Keywords" placeholder="5个左右,8汉字以内,用英文,隔开" value="{{$sys.site_keywords}}" class="input-text">
+						</div>
+					</div>
+					<div class="row cl">
+						<label class="form-label col-xs-4 col-sm-2">
+							<span class="c-red">*</span>
+							描述：</label>
+						<div class="formControls col-xs-8 col-sm-9">
+							<input type="text" name="site_desc" id="website-description" placeholder="空制在80个汉字，160个字符以内" value="{{$sys.site_desc}}" class="input-text">
+						</div>
+					</div>
+					<div class="row cl">
+						<label class="form-label col-xs-4 col-sm-2">
+							<span class="c-red">*</span>
+							网站公告：</label>
+						<div class="formControls col-xs-8 col-sm-9">
+							<input type="text" name="site_notice" id="website-static" placeholder="默认为空，为相对路径" value="{{$sys.site_notice}}" class="input-text">
+						</div>
+					</div>
+					<div class="row cl">
+						<label class="form-label col-xs-4 col-sm-2">
+							<span class="c-red">*</span>
+							底部版权信息：</label>
+						<div class="formControls col-xs-8 col-sm-9">
+							<input type="text" name="site_right" id="website-copyright" placeholder="&copy; 2016 H-ui.net" value="{{$sys.site_right}}" class="input-text">
+						</div>
+					</div>
+					<div class="row cl">
+						<label class="form-label col-xs-4 col-sm-2">备案号：</label>
+						<div class="formControls col-xs-8 col-sm-9">
+							<input type="text"  name="site_no" id="website-icp" placeholder="京ICP备00000000号" value="{{$sys.site_no}}" class="input-text">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row cl">
+				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+					<button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
+					<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<script type="text/javascript">
+	$(function(){
+		$('.skin-minimal input').iCheck({
+			checkboxClass: 'icheckbox-blue',
+			radioClass: 'iradio-blue',
+			increaseArea: '20%'
+		});
+		$("#tab-system").Huitab({
+			index:0
+		});
+	});
+	</script>
+	<!--/请在上方写此页面业务相关的脚本-->
+	</body>
+	</html>

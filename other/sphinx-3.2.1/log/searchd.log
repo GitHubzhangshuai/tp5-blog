@@ -1,0 +1,135 @@
+[Thu May  7 10:05:48.181 2020] [21924] listening on all interfaces, port=9312
+[Thu May  7 10:05:48.184 2020] [21924] listening on all interfaces, port=9306
+[Thu May  7 10:05:48.194 2020] [21924] WARNING: index 'test1stemmed': prealloc: failed to open /var/data/test1stemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 10:05:48.222 2020] [21924] WARNING: index 'rt': prealloc: failed to open /var/data/rt.lock: No such file or directory; NOT SERVING
+[Thu May  7 10:05:48.233 2020] [21924] accepting connections
+[Thu May  7 10:05:48.235 2020] [19840] prereading 1 indexes
+[Thu May  7 10:05:48.236 2020] [19840] prereaded 1 indexes in 0.000 sec
+[Thu May  7 10:06:31.690 2020] [21924] caught SIGTERM, shutting down
+[Thu May  7 10:06:31.764 2020] [21924] shutdown complete
+[Thu May  7 10:06:39.543 2020] [17304] listening on all interfaces, port=9312
+[Thu May  7 10:06:39.548 2020] [17304] listening on all interfaces, port=9306
+[Thu May  7 10:06:39.560 2020] [17304] WARNING: index 'test1stemmed': prealloc: failed to open C:\soft\sphinx-3.2.1\data/test1stemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 10:06:39.600 2020] [17304] accepting connections
+[Thu May  7 10:06:39.603 2020] [21580] prereading 2 indexes
+[Thu May  7 10:06:39.603 2020] [21580] prereaded 2 indexes in 0.000 sec
+[Thu May  7 10:07:37.262 2020] [17304] caught SIGTERM, shutting down
+[Thu May  7 10:07:37.327 2020] [17304] rt: index rt: ramchunk saved in 0.017 sec
+[Thu May  7 10:07:37.347 2020] [17304] shutdown complete
+[Thu May  7 10:07:44.874 2020] [5476] listening on all interfaces, port=9312
+[Thu May  7 10:07:44.879 2020] [5476] listening on all interfaces, port=9306
+[Thu May  7 10:07:44.892 2020] [5476] WARNING: index 'test1stemmed': prealloc: failed to open C:\soft\sphinx-3.2.1\data/test1stemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 10:07:44.928 2020] [5476] accepting connections
+[Thu May  7 10:07:44.932 2020] [7176] prereading 2 indexes
+[Thu May  7 10:07:44.932 2020] [7176] prereaded 2 indexes in 0.000 sec
+[Thu May  7 10:08:59.220 2020] [5476] caught SIGTERM, shutting down
+[Thu May  7 10:08:59.278 2020] [5476] rt: index rt: ramchunk saved in 0.006 sec
+[Thu May  7 10:08:59.318 2020] [5476] shutdown complete
+[Thu May  7 10:09:09.259 2020] [13884] listening on all interfaces, port=9312
+[Thu May  7 10:09:09.265 2020] [13884] listening on all interfaces, port=9306
+[Thu May  7 10:09:09.276 2020] [13884] WARNING: index 'test1stemmed': prealloc: failed to open C:\soft\sphinx-3.2.1\data/test1stemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 10:09:09.313 2020] [13884] accepting connections
+[Thu May  7 10:09:09.317 2020] [5816] prereading 2 indexes
+[Thu May  7 10:09:09.317 2020] [5816] prereaded 2 indexes in 0.000 sec
+[Thu May  7 10:16:50.863 2020] [13884] caught SIGTERM, shutting down
+[Thu May  7 10:16:50.904 2020] [13884] rt: index rt: ramchunk saved in 0.008 sec
+[Thu May  7 10:16:51.003 2020] [13884] shutdown complete
+[Thu May  7 11:56:12.865 2020] [24892] listening on all interfaces, port=9312
+[Thu May  7 11:56:12.867 2020] [24892] listening on all interfaces, port=9306
+[Thu May  7 11:56:12.873 2020] [24892] WARNING: index 'articlestemmed': prealloc: failed to open C:\soft\sphinx-3.2.1\data/articlestemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 11:56:12.873 2020] [24892] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 11:56:12.874 2020] [24892] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 11:56:12.892 2020] [24892] accepting connections
+[Thu May  7 11:56:12.892 2020] [24252] prereading 2 indexes
+[Thu May  7 11:56:12.893 2020] [24252] prereaded 2 indexes in 0.001 sec
+[Thu May  7 11:59:33.625 2020] [24892] caught SIGTERM, shutting down
+[Thu May  7 11:59:33.682 2020] [24892] rt: index rt: ramchunk saved in 0.004 sec
+[Thu May  7 11:59:33.717 2020] [24892] shutdown complete
+[Thu May  7 11:59:59.123 2020] [22052] listening on all interfaces, port=9312
+[Thu May  7 11:59:59.124 2020] [22052] listening on all interfaces, port=9306
+[Thu May  7 11:59:59.131 2020] [22052] WARNING: index 'articlestemmed': prealloc: failed to open C:\soft\sphinx-3.2.1\data/articlestemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 11:59:59.131 2020] [22052] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 11:59:59.131 2020] [22052] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 11:59:59.150 2020] [22052] accepting connections
+[Thu May  7 11:59:59.150 2020] [20540] prereading 2 indexes
+[Thu May  7 11:59:59.150 2020] [20540] prereaded 2 indexes in 0.000 sec
+[Thu May  7 12:02:51.865 2020] [22052] caught SIGTERM, shutting down
+[Thu May  7 12:02:51.919 2020] [22052] rt: index rt: ramchunk saved in 0.005 sec
+[Thu May  7 12:02:52.014 2020] [22052] shutdown complete
+[Thu May  7 12:06:11.853 2020] [19540] listening on all interfaces, port=9312
+[Thu May  7 12:06:11.854 2020] [19540] listening on all interfaces, port=9306
+[Thu May  7 12:06:11.859 2020] [19540] WARNING: index 'articlestemmed': prealloc: failed to open C:\soft\sphinx-3.2.1\data/articlestemmed.sph: No such file or directory; NOT SERVING
+[Thu May  7 12:06:11.859 2020] [19540] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 12:06:11.861 2020] [19540] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 12:06:11.879 2020] [19540] accepting connections
+[Thu May  7 12:06:11.879 2020] [10964] prereading 2 indexes
+[Thu May  7 12:06:11.879 2020] [10964] prereaded 2 indexes in 0.000 sec
+[Thu May  7 12:06:54.899 2020] [19540] caught SIGTERM, shutting down
+[Thu May  7 12:06:54.944 2020] [19540] rt: index rt: ramchunk saved in 0.003 sec
+[Thu May  7 12:06:55.036 2020] [19540] shutdown complete
+[Thu May  7 12:07:54.972 2020] [3212] listening on all interfaces, port=9312
+[Thu May  7 12:07:54.973 2020] [3212] listening on all interfaces, port=9306
+[Thu May  7 12:07:54.984 2020] [3212] WARNING: index 'articlestemmed': lock: failed to lock C:\soft\sphinx-3.2.1\data/article.spl: No such file or directory; NOT SERVING
+[Thu May  7 12:07:54.984 2020] [3212] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 12:07:54.985 2020] [3212] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 12:07:55.005 2020] [3212] accepting connections
+[Thu May  7 12:07:55.006 2020] [7372] prereading 2 indexes
+[Thu May  7 12:07:55.006 2020] [7372] prereaded 2 indexes in 0.000 sec
+[Thu May  7 12:17:56.231 2020] [23032] WARNING: failed to receive MySQL request body (client=127.0.0.1:60210(5), exp=0, error='WSA error 0')
+[Thu May  7 14:27:37.959 2020] [3212] caught SIGTERM, shutting down
+[Thu May  7 14:27:37.994 2020] [3212] rt: index rt: ramchunk saved in 0.003 sec
+[Thu May  7 14:27:38.088 2020] [3212] shutdown complete
+[Thu May  7 14:28:21.434 2020] [19212] listening on all interfaces, port=9312
+[Thu May  7 14:28:21.435 2020] [19212] listening on all interfaces, port=9306
+[Thu May  7 14:28:21.444 2020] [19212] WARNING: index 'articlestemmed': lock: failed to lock C:\soft\sphinx-3.2.1\data/article.spl: No such file or directory; NOT SERVING
+[Thu May  7 14:28:21.444 2020] [19212] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 14:28:21.445 2020] [19212] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 14:28:21.465 2020] [19212] accepting connections
+[Thu May  7 14:28:21.465 2020] [1576] prereading 2 indexes
+[Thu May  7 14:28:21.466 2020] [1576] prereaded 2 indexes in 0.001 sec
+[Thu May  7 14:29:53.693 2020] [19212] caught SIGTERM, shutting down
+[Thu May  7 14:29:53.751 2020] [19212] rt: index rt: ramchunk saved in 0.005 sec
+[Thu May  7 14:29:53.753 2020] [19212] shutdown complete
+[Thu May  7 14:30:03.247 2020] [7544] listening on all interfaces, port=9312
+[Thu May  7 14:30:03.248 2020] [7544] listening on all interfaces, port=9306
+[Thu May  7 14:30:03.257 2020] [7544] WARNING: index 'articlestemmed': lock: failed to lock C:\soft\sphinx-3.2.1\data/article.spl: No such file or directory; NOT SERVING
+[Thu May  7 14:30:03.257 2020] [7544] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 14:30:03.258 2020] [7544] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 14:30:03.277 2020] [7544] accepting connections
+[Thu May  7 14:30:03.277 2020] [11664] prereading 2 indexes
+[Thu May  7 14:30:03.278 2020] [11664] prereaded 2 indexes in 0.000 sec
+[Thu May  7 16:02:31.110 2020] [7544] caught SIGTERM, shutting down
+[Thu May  7 16:02:31.156 2020] [7544] rt: index rt: ramchunk saved in 0.003 sec
+[Thu May  7 16:02:31.172 2020] [7544] shutdown complete
+[Thu May  7 16:02:34.987 2020] [22536] listening on all interfaces, port=9312
+[Thu May  7 16:02:34.988 2020] [22536] listening on all interfaces, port=9306
+[Thu May  7 16:02:34.998 2020] [22536] WARNING: index 'articlestemmed': lock: failed to lock C:\soft\sphinx-3.2.1\data/article.spl: No such file or directory; NOT SERVING
+[Thu May  7 16:02:34.999 2020] [22536] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 16:02:34.999 2020] [22536] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 16:02:35.017 2020] [22536] accepting connections
+[Thu May  7 16:02:35.017 2020] [15208] prereading 2 indexes
+[Thu May  7 16:02:35.018 2020] [15208] WARNING: 'article' preread: duplicate attribute name: title
+[Thu May  7 16:02:35.018 2020] [15208] prereaded 2 indexes in 0.001 sec
+[Thu May  7 16:05:28.794 2020] [22536] caught SIGTERM, shutting down
+[Thu May  7 16:05:28.801 2020] [22536] rt: index rt: ramchunk saved in 0.003 sec
+[Thu May  7 16:05:28.821 2020] [22536] shutdown complete
+[Thu May  7 16:05:33.665 2020] [6040] listening on all interfaces, port=9312
+[Thu May  7 16:05:33.666 2020] [6040] listening on all interfaces, port=9306
+[Thu May  7 16:05:33.675 2020] [6040] WARNING: index 'articlestemmed': lock: failed to lock C:\soft\sphinx-3.2.1\data/article.spl: No such file or directory; NOT SERVING
+[Thu May  7 16:05:33.675 2020] [6040] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 16:05:33.676 2020] [6040] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 16:05:33.693 2020] [6040] accepting connections
+[Thu May  7 16:05:33.694 2020] [2508] prereading 2 indexes
+[Thu May  7 16:05:33.694 2020] [2508] prereaded 2 indexes in 0.000 sec
+[Thu May  7 16:26:39.814 2020] [5932] listening on all interfaces, port=9312
+[Thu May  7 16:26:39.815 2020] [5932] listening on all interfaces, port=9306
+[Thu May  7 16:26:39.823 2020] [5932] WARNING: index 'articlestemmed': lock: failed to lock C:\soft\sphinx-3.2.1\data/article.spl: No such file or directory; NOT SERVING
+[Thu May  7 16:26:39.823 2020] [5932] WARNING: index 'dist1': no such local index 'test1', SKIPPED
+[Thu May  7 16:26:39.824 2020] [5932] WARNING: index 'dist1': no such local index 'test1stemmed', SKIPPED
+[Thu May  7 16:26:39.841 2020] [5932] binlog: replaying log ./binlog.001
+[Thu May  7 16:26:39.842 2020] [5932] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Thu May  7 16:26:39.842 2020] [5932] binlog: finished replaying ./binlog.001; 0.0 MB in 0.000 sec
+[Thu May  7 16:26:39.843 2020] [5932] binlog: finished replaying total 1 in 0.001 sec
+[Thu May  7 16:26:39.847 2020] [5932] accepting connections
+[Thu May  7 16:26:39.847 2020] [13848] prereading 2 indexes
+[Thu May  7 16:26:39.848 2020] [13848] prereaded 2 indexes in 0.000 sec
