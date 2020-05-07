@@ -8,3 +8,5 @@ tp5.0.11实战博客源码
 搜索功能通过sphinx实现
 
 sphinx和redis绿色包放在other里
+
+sql文件放在other里，自行导入本地mysql使用
